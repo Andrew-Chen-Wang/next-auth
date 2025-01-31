@@ -232,7 +232,7 @@ Automatic account linking is seen on some sites, sometimes insecurely. It can be
 
 Examples of scenarios where this is secure include with an OAuth provider you control (e.g. that only authorizes users internal to your organization) or with a provider you explicitly trust to have verified the users email address.
 
-Automatic account linking is not a planned feature of NextAuth.js, however there is scope to improve the user experience of account linking and of handling this flow, in a secure way. Typically this involves providing a fallback option to sign in via email, which is already possible (and recommended), but the current implementation of this flow could be improved on.
+Automatic account linking is supported on a per-provider basis with `allowDangerousEmailAccountLinking`.
 
 Providing support for secure account linking and unlinking of additional providers - which can only be done if a user is already signed in already - was originally a feature in v1.x but has not been present since v2.0, is planned to return in a future release.
 
